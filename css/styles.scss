@@ -45,8 +45,8 @@ body{
   border-radius: 10px;
   transition: all 0.3s;
   &:hover{
+    box-shadow: 0 -5px 15px rgba(175, 164, 119, 0.6);
     .poster{
-      box-shadow: 0 0 10px #273234;
       &::before{
         bottom: 0;
       }
@@ -55,6 +55,7 @@ body{
         transform: translateY(-60px);
       }
     }
+    
     .details{
       bottom: 0;
     }
@@ -85,8 +86,9 @@ body{
     height: 85%;
     bottom: -200px;
     left: 0;
-    transition: 0.5s;
+    transition: 1s;
     z-index: 2;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 60%, transparent);
     .imgcontent{
       color: #fff;
       margin: 0;
@@ -133,10 +135,11 @@ body{
       }
     }
     .info{
-      color: #fff;
+      color: rgba(255, 255, 255, 0.7);
       p{
         margin: 10px 0 10px;
         font-size: 10px;
+        font-weight: 500;
       }
     }
     .cast{
@@ -160,7 +163,7 @@ body{
             height: 45px;
             object-fit: cover;
             border-radius: 13%;
-            border: 2px solid #fff;
+            border: transparent ;
           }
         }
       }

@@ -46,8 +46,8 @@ body::before {
   border-radius: 10px;
   transition: all 0.3s;
 }
-.card:hover .poster {
-  box-shadow: 0 0 10px #273234;
+.card:hover {
+  box-shadow: 0 -5px 15px rgba(175, 164, 119, 0.6);
 }
 .card:hover .poster::before {
   bottom: 0;
@@ -86,8 +86,9 @@ body::before {
   height: 85%;
   bottom: -200px;
   left: 0;
-  transition: 0.5s;
+  transition: 1s;
   z-index: 2;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 60%, transparent);
 }
 .card .details .imgcontent {
   color: #fff;
@@ -135,11 +136,12 @@ body::before {
   background: #3498db;
 }
 .card .details .info {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
 }
 .card .details .info p {
   margin: 10px 0 10px;
   font-size: 10px;
+  font-weight: 500;
 }
 .card .details .cast {
   position: relative;
@@ -166,5 +168,5 @@ body::before {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 13%;
-  border: 2px solid #fff;
+  border: transparent;
 }/*# sourceMappingURL=styles.css.map */
